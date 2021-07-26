@@ -6,37 +6,6 @@
   height: 100vh;
 }
 
-#header {
-  max-height: 160px;
-  overflow: hidden;
-  padding: 40px 0;
-}
-
-#header #logo-container img {
-  width: 220px;
-  height: auto;
-}
-
-#header #navigation ul {
-  list-style: none;
-}
-
-#header #navigation ul li a {
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-#header #navigation ul li a:hover {
-  color: white;
-}
-
-#main-container {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-
 #hero-section #slider-text-container .inner-text h2 {
   color: white;
   font-size: 6rem;
@@ -86,30 +55,5 @@
 #featured-images .grid-container a:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-}
-
-#footer {
-  padding-top: 50px;
-}
-
-#footer .social-icons .social-icon {
-  margin-right: 15px;
-}
-
-#footer .social-icons .social-icon a {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-#footer .social-icons .social-icon a:hover {
-  color: white;
-}
-
-#footer .copyright {
-  margin-top: 10px;
-}
-
-#footer .copyright .copyright-text {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
 }
 /*# sourceMappingURL=home.css.map */

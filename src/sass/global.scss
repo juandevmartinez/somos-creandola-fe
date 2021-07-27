@@ -1,5 +1,13 @@
 @import "utils/variables";
 
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
 #header {
     max-height: 160px;
     overflow: hidden;
@@ -28,6 +36,10 @@
                 }
             }
         }
+
+        @media (max-width: 725px){
+            display: none;
+        }
     }
 }
 
@@ -44,6 +56,10 @@
                 } 
             }
         }
+
+        @media (max-width: 725px){
+            display: none;
+        }
     }
 
     .copyright {
@@ -52,10 +68,63 @@
             text-align: center;
             color: rgba(255,255,255,0.5);
         }
+
+        @media (max-width: 725px){
+            display: none;
+        } 
     }
 }
 
 #main-container {
     padding-top: 100px;
     padding-bottom: 50px;
+}
+
+#mobile-nav {
+    background-color: $light-color;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+
+    .mobile-nav-item {
+        img {
+            width: 30px;
+        }
+    } 
+}
+
+#sidebar-menu {
+    position: fixed;
+    background-color: $light-color;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    transition: all 0.45s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: translateX(-300px);
+
+    &.opened {
+        transform: translateX(0) !important;
+    }
+
+    .navigation-list {
+        list-style-type: none;
+
+
+        li {
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            padding: 10px;
+
+            a{
+                color: white;
+                text-decoration: none;
+                font-family: $primary-font;
+                font-size: $mobile-menu;
+            }
+        }
+    }
 }

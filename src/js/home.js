@@ -5,4 +5,11 @@ document.addEventListener( 'DOMContentLoaded', () => {
         loop: true,
         autoStart: true
     });
+
+
+    const menuToggle = document.querySelector('[data-open]');
+    const sidebar = document.querySelector('#sidebar-menu');
+    menuToggle.addEventListener('click', (event) => {
+        sidebar.classList.toggle('opened');
+    })
 });

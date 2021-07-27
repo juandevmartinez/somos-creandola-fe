@@ -34,6 +34,43 @@
   font-size: 16px;
 }
 
+#post-section .post-comments {
+  border-left: 3px solid white;
+  padding-left: 15px;
+  max-height: 450px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#post-section .post-comments::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+#post-section .post-comments::-webkit-scrollbar-thumb {
+  background: #8AB833;
+  border-radius: 6px;
+}
+
+#post-section .post-comments::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+#post-section .post-comments::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 6px;
+}
+
+#post-section .post-comments span {
+  color: white;
+  font-weight: bold;
+}
+
+#post-section .post-comments p {
+  color: white;
+  opacity: 0.7;
+}
+
 #post-section .post-actions .badge {
   background: rgba(0, 0, 0, 0.4);
   padding: 10px;
@@ -44,6 +81,15 @@
 #post-section .post-actions .badge small {
   display: block;
   margin-left: 5px;
+}
+
+#post-section .post-actions .badge a {
+  color: white;
+  text-decoration: none;
+}
+
+#post-section .post-actions .badge.keep-reading {
+  background-color: #8AB833;
 }
 
 #related-posts {

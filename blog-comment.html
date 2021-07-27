@@ -15,10 +15,10 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    
 
-    <link rel="stylesheet" href="/src/sass/home.css">
+    <link rel="stylesheet" href="/src/sass/post.css">
     <link rel="stylesheet" href="/src/sass/global.css">
 </head>
-<body id="home">
+<body id="post">
     <header id="header">
         <div class="container">
             <div class="row">
@@ -39,71 +39,69 @@
     </header>
 
     <div id="main-container">
-        <div id="hero-section" class="container">
-            <div class="row">
-                <div id="slider-text-container" class="col-md-4">
-                    <div class="inner-text">
-                        <h2 class="slider-title">Creamos</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iste dolor eos velit, non, accusamus soluta accusantium tempora, architecto in animi deleniti autem debitis ratione voluptate? Ipsum natus similique magnam.</p>
+        <div id="post-section" class="container">
+            <div class="row align-items-center">
+                <div id="blog-header-text" class="col-md-6">
+                    <h2 class="header-title">Blog: hola</h2>
+                    <small>Category</small>
+                    <div class="post-comments mt-3">
+                        <span class="comment-author">Sebastian de apex</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam accusamus necessitatibus est, quae asperiores consequatur minima. A consequatur, ipsa non odio, perferendis corporis illum quia blanditiis libero recusandae incidunt.</p>
                     </div>
-                    <!-- <div class="inner-text">
-                        <h2 class="slider-title">Creamos</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iste dolor eos velit, non, accusamus soluta accusantium tempora, architecto in animi deleniti autem debitis ratione voluptate? Ipsum natus similique magnam.</p>
+                    <div class="post-comments mt-3">
+                        <span class="comment-author">Sebastian de apex</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam accusamus necessitatibus est, quae asperiores consequatur minima. A consequatur, ipsa non odio, perferendis corporis illum quia blanditiis libero recusandae incidunt.</p>
                     </div>
-                    <div class="inner-text">
-                        <h2 class="slider-title">Creamos</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iste dolor eos velit, non, accusamus soluta accusantium tempora, architecto in animi deleniti autem debitis ratione voluptate? Ipsum natus similique magnam.</p>
-                    </div> -->
-                </div>
-                <div id="featured-images" class="col-md-8">
-                    <div class="grid-container px-0 px-lg-5">
-                        <a href="#"><img src="/src/img/servicios/servicio-marketing.jpg" alt=""></a>
-                        <a href="#"><img src="/src/img/servicios/servicio-servicio-desarrollo.jpg" alt=""></a>
-                        <a href="#"><img src="/src/img/servicios/servicio-tiendaonline.jpg" alt=""></a>
+                    <div class="post-comments mt-3">
+                        <span class="comment-author">Sebastian de apex</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam accusamus necessitatibus est, quae asperiores consequatur minima. A consequatur, ipsa non odio, perferendis corporis illum quia blanditiis libero recusandae incidunt.</p>
                     </div>
                 </div>
+                <div id="related-posts" class="col-md-6">
+                    <div class="related-post mb-3 current">
+                        <img src="./src/img/bg/bg-desarrollo.jpg" alt="" class="w-100 h-100">
+                        <h2>Blog: Hola</h2>
+                    </div>
+                    <div class="related-post mb-3">
+                        <img src="./src/img/bg/bg-desarrollo.jpg" alt="" class="w-100 h-100">
+                        <h2>Blog: Hola</h2>
+                    </div>
+                    <div class="related-post mb-3">
+                        <img src="./src/img/bg/bg-desarrollo.jpg" alt="" class="w-100 h-100">
+                        <h2>Blog: Hola</h2>
+                    </div>
+                    <div class="related-post mb-3">
+                        <img src="./src/img/bg/bg-desarrollo.jpg" alt="" class="w-100 h-100">
+                        <h2>Blog: Hola</h2>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <div id="mobile-nav" class="py-3">
-        <div class="d-flex align-items-center justify-content-evenly">
-            <div class="mobile-nav-item">
-                <a href="#"><img src="./src/img/icons/icon-home2.png" alt=""></a>
+            <div class="post-actions mt-3">
+                <div class="d-flex align-items-center">
+                    <div class="badge d-flex flex-row align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                            <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        <small>11</small>
+                    </div>
+                    <div class="badge d-flex flex-row align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+                            <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+                        </svg>
+                        <small>56</small>
+                    </div>
+                    <div class="badge d-flex flex-row align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                            <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                        </svg>
+                    </div>
+                    <div class="badge d-flex flex-row align-items-center keep-reading">
+                        <a href="#">Seguir Leyendo</a>
+                    </div>
+                </div>
             </div>
-            <div class="mobile-nav-item">
-                <a href="#"><img src="./src/img/icons/icon-desarrollo2.png" alt=""></a>
-            </div>
-            <div class="mobile-nav-item">
-                <a href="#"><img src="./src/img/icons/icon-marketing2.png" alt=""></a>
-            </div>
-            <div class="mobile-nav-item">
-                <a href="#" data-open="mobile-menu"><img src="./src/img/icons/icon-hamburguesa2.png" alt=""></a>
-            </div>
-        </div>
-    </div>
-
-    <div id="sidebar-menu">
-        <div class="container">
-            <div id="sidebar-log">
-                <img src="" alt="">
-            </div>
-            <nav id="navigation">
-                <ul class="navigation-list d-flex flex-column justify-content-between p-0">
-                    <li class="d-flex align-items-center">
-                        <img src="./src/img/icons/icon-home2.png" alt="" width="30" class="mr-2">
-                        <a href="#" class="px-2">Home</a>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <img src="./src/img/icons/icon-marketing2.png" alt="" width="30" class="mr-2">
-                        <a href="#" class="px-2">Marketing Digital</a>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <img src="./src/img/icons/icon-desarrollo2.png" alt="" width="30" class="mr-2">
-                        <a href="#" class="px-2">Desarrollo a la Medida</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </div>
 
@@ -135,13 +133,10 @@
                 </div>
             </div>
 
-            <div class="copyright">
+            <div class="copyright pt-2">
                 <p class="copyright-text">Diseñado por Voltaje Publicidad / Desarrollado por Somos Creandola</p>
             </div>
         </div>
     </footer>
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="src/js/home.js"></script>
 </body>
 </html>

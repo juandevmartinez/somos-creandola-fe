@@ -1,0 +1,179 @@
+@import "utils/variables";
+
+#project {
+    background-image: url('../img/bg/bg-blog-proyectos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    #main-container {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+#project-section {
+    #project-header-text {
+        h2 {
+            color: white;
+            font-size: $post-tile;
+            text-transform: uppercase;
+        }
+
+        small {
+            display: block;
+            padding: 10px;
+            background-color: $main-color;
+            border-radius: 3px;
+            color: white;
+            width: fit-content;
+            font-weight: bold;
+        }
+    }
+
+    .post-content {
+        p {
+            color: white;
+            font-size: $post-content;
+        }
+    }
+
+    .post-comments {
+        border-left: 3px solid white;
+        padding-left: 15px;
+        max-height: 450px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar{
+            width: 9px;
+            height: 9px;
+        }
+        
+        &::-webkit-scrollbar-thumb{
+            background: $scrollbar-color;
+            border-radius: 6px;
+        }
+        
+        &::-webkit-scrollbar-thumb:hover{
+            background: transparent;
+        }
+        
+        &::-webkit-scrollbar-track{
+            background: transparent;
+            border-radius: 6px;
+        }
+
+        span {
+            color: white;
+            font-weight: bold;
+        }
+
+        p {
+            color: white;
+            opacity: 0.7;
+        }
+    }
+
+    .post-actions {
+        .badge {
+            background: rgba(0,0,0,0.4);
+            padding: 10px;
+            cursor: pointer;
+            margin-right: 10px;
+
+            small {
+                display: block;
+                margin-left: 5px;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            &.keep-reading {
+                background-color: $light-color;
+            }
+        }
+    }
+}
+
+#related-projects {
+    max-height: 420px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+        width: 9px;
+        height: 9px;
+    }
+    
+    &::-webkit-scrollbar-thumb{
+        background: $scrollbar-color;
+        border-radius: 6px;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover{
+        background: transparent;
+    }
+    
+    &::-webkit-scrollbar-track{
+        background: transparent;
+        border-radius: 6px;
+    }
+
+    .related-post {
+        position:relative;
+        min-height: 280px;
+        overflow: hidden;
+        border-radius: 5px;
+        border: 3px solid white;
+        float: right;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &.current {
+            border-color: $light-color;
+        }
+
+        &:hover {
+            border-color: $light-color;
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.4;
+            z-index: 10;
+        }
+    
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            z-index: 9;
+        }
+    
+        h2 {
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            color: white;
+            font-family: $primary-font;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: $post-card-font;
+            z-index: 20;
+        }
+    }
+    
+}

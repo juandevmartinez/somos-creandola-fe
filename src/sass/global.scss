@@ -87,12 +87,17 @@ body {
     left: 0;
     width: 100%;
     z-index: 99;
+    display: none;
 
     .mobile-nav-item {
         img {
             width: 30px;
         }
     } 
+
+    @media ( max-width: 425px ){
+        display: block;
+    }
 }
 
 #sidebar-menu {
